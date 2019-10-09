@@ -1,0 +1,65 @@
+
+
+
+plt.figure(figsize=(15,6))
+
+# loop through dataframe to build plot
+for temp in weather_df.columns:
+    plt.scatter(weather_df.lat, weather_df.Lat, color = 'green')
+
+#Format the plot
+plt.suptitle('Adult Population by Year',size = 16)
+plt.xlabel('Year',size = 14)
+plt.ylabel('Population',size = 14)
+plt.grid()
+
+plt.savefig('COAdultPop')
+plt.show()
+
+
+
+============
+>>> df = pd.DataFrame([[5.1, 3.5, 0], [4.9, 3.0, 0], [7.0, 3.2, 1],
+...                    [6.4, 3.2, 1], [5.9, 3.0, 2]],
+...                   columns=['length', 'width', 'species'])
+>>> ax1 = df.plot.scatter(x='length',
+...                       y='width',
+...                       c='DarkBlue')
+
+>>> ax2 = df.plot.scatter(x='length',
+...                       y='width',
+...                       c='species',
+...                       colormap='viridis')
+
+plt.scatter(df.preTestScore, df.postTestScore
+, s=df.age)
+
+
+plt.figure(figsize=(15,6))
+plt.scatter(city_weather12_df.Lat, city_weather12_df.MaxTemp, 'red')
+
+
+city_weather11_df 
+
+
+
+one_df = 
+
+scatter(mydata(["col1", "col2"]), s=mydata["col3"])
+
+
+
+
+df = pd.DataFrame(np.random.randn(10,2), columns=['col1','col2'])
+df['col3'] = np.arange(len(df))**2 * 100 + 100
+
+
+city_data_pd = pd.DataFrame(city_data)
+
+city_weather11_df = pd.DataFrame(city_data)
+city_weather11_df['absLat'] = city_weather11_df['Lat'].abs()
+city_weather11_df.to_csv('CityWeather11.csv', index=False)
+# lats = city_data_pd["Lat"] 
+
+city_weather11_df
+
